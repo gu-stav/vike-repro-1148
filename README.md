@@ -40,9 +40,6 @@ Error: [vite-plugin-ssr@0.4.140][Bug] You stumbled upon a bug in vite-plugin-ssr
 leads to (vike@0.4.142 running `pnpm build`)
 
 ```
-> dev@1.0.0 start /Users/gu-stav/Development/unding-vite-plugin-ssr-wrapper-repro/apps/dev
-> unding start
-
 > dev@1.0.0 build /Users/gu-stav/Development/unding-vite-plugin-ssr-wrapper-repro/apps/dev
 > unding build
 
