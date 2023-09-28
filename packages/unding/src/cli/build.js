@@ -21,18 +21,16 @@ export async function build() {
         },
     }
 
-    await Promise.all([
-        vite.build(commonOptions),
-        vite.build({
-            ...commonOptions,
-            build: {
-                ...commonOptions.build,
-                ssr: true,
-            },
-            ssr: {
-                ...commonOptions.ssr,
-                external: ['@unding/studio'],
-            },
-        })
-    ]);
+    await vite.build(commonOptions),
+    await vite.build({
+        ...commonOptions,
+        build: {
+            ...commonOptions.build,
+            ssr: true,
+        },
+        ssr: {
+            ...commonOptions.ssr,
+            external: ['@unding/studio'],
+        },
+    })
 }
